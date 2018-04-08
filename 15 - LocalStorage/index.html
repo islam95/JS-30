@@ -37,7 +37,15 @@
 
   }
 
-  
+  function populateList(tasks = [], todoList){
+    todoList.innerHTML = tasks.map((task, i) => {
+      return `
+        <li>
+          <label for="">${task.text}</label>
+        </li>
+      `;
+    }).join('');
+  }
 
 
   addItems.addEventListener("submit", addItem);
