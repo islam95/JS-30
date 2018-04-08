@@ -44,7 +44,7 @@
       cursor: pointer;
 
     }
-
+    
     .tasks input {
       display: none;
     }
@@ -53,9 +53,9 @@
       content: '⬜️';
       margin-right: 10px;
     }
-
+    
     .tasks input:checked + label:before {
-      content: '🌮';
+      content: '✅';
     }
 
     .add-items {
